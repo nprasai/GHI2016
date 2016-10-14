@@ -188,12 +188,12 @@ gulp.task('watch', ['connect', 'serve'], function () {
 
 });
 
-/*var options = {
+var options = {
 	remoteUrl:"https://github.com/nprasai/2016GHITest.git"
-};*/
+};
 
 gulp.task('deploy', function() {
   return gulp.src("./dist/**/*")
-    .pipe(ghPages(/*options*/));
+    .pipe(ghPages(options));
 });
 
